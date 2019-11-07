@@ -1,0 +1,19 @@
+.badge {
+  padding: 3px;
+  border-radius: 0px;
+}
+
+.kommersant {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.meduza {
+  background-color: #000000;
+  color: #D09959;
+}
+
+.nplus1 {
+  background-color: #FE5F19;
+  color: #000000;
+}

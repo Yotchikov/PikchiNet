@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
   <link rel="stylesheet" type="text/css" href="./styles/brands.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <title>Пикчи нет!</title>
 </head>
 
@@ -33,9 +36,9 @@
     <div class="col-md-2 left-bar">
       <div class="menu">
         <div class="list-group mb-auto">
-          <a href="#" class="list-group-item list-group-item-action border-0 active"><i class="fa fa-home" aria-hidden="true"></i>&ensp;Главная</a>
-          <a href="#" class="list-group-item list-group-item-action border-0"><i class="fa fa-flask" aria-hidden="true"></i>&ensp;Лаборатория</a>
-          <a href="#" class="list-group-item list-group-item-action border-0"><i class="fa fa-cog" aria-hidden="true"></i>&ensp;Настройки</a>
+          <a href="#" class="list-group-item list-group-item-action border-0 active"><i class="fa fa-home" aria-hidden="true"></i>&ensp;&ensp;Главная</a>
+          <a href="#" class="list-group-item list-group-item-action border-0"><i class="fa fa-flask" aria-hidden="true"></i>&ensp;&ensp;Лаборатория</a>
+          <a href="#" class="list-group-item list-group-item-action border-0"><i class="fa fa-cog" aria-hidden="true"></i>&ensp;&ensp;Настройки</a>
         </div>
       </div>
     </div>
@@ -53,17 +56,18 @@
                 <div class="col-1 tool-panel">
                   <div class="rate">
                     <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-                    42
+                    <br>127<br>
                     <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                   </div>
                 </div>
                 <div class="col-11">
                   <div class="card-body">
-
-                    <h6 class="card-title"><a href=""><span class="badge nplus1">N+1</span></a></h6>
-                    <p class="card-text">На днях в МГУ прошла ежегодная осенняя лекция, посвящённая найденным берестяным грамотам с древнерусскими текстами — в этом сезоне их набралось 11. Многие из них не сохранились в целости, и, по традиции,
-                      слушатели пытались сами их расшифровать</p>
-                    <img src="./img/beresta.jpg" class="card-img-top" alt="...">
+                    <ul class="card-top">
+                      <li><a href="" class="card-title"><span class="badge rbc">РБК</span></a></li>
+                      <li><a href="" class="card-hashtag">#ПРОИСШЕСТВИЯ</a></li>
+                    </ul>
+                    <p class="card-text">Сотрудника ядерного центра в Сарове оштрафовали на 450 тысяч рублей за попытку майнинга биткоинов на суперкомпьютере мощностью один петафлопс</p>
+                    <img src="img/mine.jpg" alt="...">
                     <hr>
                     <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
                   </div>
@@ -78,15 +82,18 @@
                 <div class="col-1 tool-panel">
                   <div class="rate">
                     <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-                    42
+                    <br>42<br>
                     <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                   </div>
                 </div>
                 <div class="col-11">
                   <div class="card-body">
-                    <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
+                    <ul class="card-top">
+                      <li><a href="" class="card-title"><span class="badge meduza">Meduza</span></a></li>
+                      <li><a href="" class="card-hashtag">#ПОЛИТИКА</a></li>
+                    </ul>
                     <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
-                    <img src="./img/rus.jpg" class="card-img-top" alt="...">
+                    <img src="./img/rus.jpg" alt="...">
                     <hr>
                     <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
                   </div>
@@ -130,6 +137,61 @@
             </div>
           </div>
         </div>
+        <!--Остальные пикчи-->
+        <br>
+        <div class="row row-posts">
+          <!--Левая колонка-->
+          <div class="col-md-6">
+            <div class="card post">
+              <div class="row no-gutters">
+                <div class="col-1 tool-panel">
+                  <div class="rate">
+                    <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                    <br>127<br>
+                    <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+                <div class="col-11">
+                  <div class="card-body">
+                    <ul class="card-top">
+                      <li><a href="" class="card-title"><span class="badge rbc">РБК</span></a></li>
+                      <li><a href="" class="card-hashtag">#ПРОИСШЕСТВИЯ</a></li>
+                    </ul>
+                    <p class="card-text">Сотрудника ядерного центра в Сарове оштрафовали на 450 тысяч рублей за попытку майнинга биткоинов на суперкомпьютере мощностью один петафлопс</p>
+                    <img src="img/mine.jpg" alt="...">
+                    <hr>
+                    <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Правая колонка-->
+          <div class="col-md-6">
+            <div class="card post">
+              <div class="row no-gutters">
+                <div class="col-1 tool-panel">
+                  <div class="rate">
+                    <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                    <br>42<br>
+                    <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+                <div class="col-11">
+                  <div class="card-body">
+                    <ul class="card-top">
+                      <li><a href="" class="card-title"><span class="badge meduza">Meduza</span></a></li>
+                      <li><a href="" class="card-hashtag">#ПОЛИТИКА</a></li>
+                    </ul>
+                    <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
+                    <img src="./img/rus.jpg" alt="...">
+                    <hr>
+                    <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>

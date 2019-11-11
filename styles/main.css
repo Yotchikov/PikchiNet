@@ -47,7 +47,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .navbar-top .btn-login:hover {
@@ -90,12 +90,14 @@ body {
 .menu {
   padding: 1rem;
   height: inherit;
+  position: fixed;
+  width: 16%;
 }
 
 .menu a {
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .menu a:hover {
@@ -125,6 +127,29 @@ body {
   width: auto;
   max-width: 100%;
   max-height: 510px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-top {
+  margin: 0;
+  padding: 0;
+}
+
+.card-top li {
+  display: inline;
+  margin-right: 5px;
+}
+
+a.card-hashtag {
+  font-weight: 600;
+  font-size: 75%;
+  color: #4A4A4A;
+}
+
+a.card-hashtag:hover {
+  color: #000000;
+  text-decoration: none;
 }
 
 h4 {

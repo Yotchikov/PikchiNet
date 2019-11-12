@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #F4F4F4;
+  background-color: #F2F8FF;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
@@ -32,6 +32,7 @@ body {
 
 .navbar-brand {
   font-family: 'Press Start 2P';
+  font-size: 20px;
   color: var(--text-color);
 }
 
@@ -71,18 +72,18 @@ body {
   width: inherit;
 }
 
-.list-group .active {
+.menu .list-group .active {
   color: var(--text-color);
   background-color: #FFFFFF;
 }
 
-.list-group-item {
+.menu .list-group-item {
   background-color: transparent;
   padding: 0.4rem;
   margin: 0.2rem;
 }
 
-.list-group-item:first-child {
+.menu .list-group-item:first-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -97,7 +98,8 @@ body {
 .menu a {
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .menu a:hover {
@@ -117,6 +119,7 @@ body {
 .card {
   border-radius: 0px;
   border-width: 1px;
+  border-style: none;
 }
 
 .post {
@@ -157,11 +160,11 @@ h4 {
   font-weight: 600;
   color: var(--text-color);
   margin-top: 1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .tool-panel {
-  background-color: #F8F9FA;
+  background-color: #F1F3F4;
   text-align: center;
 }
 
@@ -200,4 +203,24 @@ h4 {
   border-color: var(--text-color);
   box-shadow: 0 0 0 .2rem rgba(5, 56, 107, 0.5);
   border-radius: 0px;
+}
+
+.divider {
+  border-width: 4px;
+}
+
+.top-list a {
+  border-left-width: 0px;
+  border-right-width: 0px;
+  font-size: 14px;
+}
+
+.top-list a:first-child {
+  border-radius: 0px;
+  border-top-width: 0px;
+}
+
+.top-list a:last-child {
+  border-radius: 0px;
+  border-bottom-width: 0px;
 }

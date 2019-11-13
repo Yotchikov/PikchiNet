@@ -37,6 +37,15 @@ body {
   color: #000000;
 }
 
+.btn-link {
+  color: var(--text-color);
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+  color: #000000;
+  text-decoration: none;
+}
+
 .navbar-top .btn-menu {
   color: var(--text-color);
   font-weight: 600;

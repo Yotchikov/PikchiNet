@@ -1,6 +1,6 @@
 :root {
   --main-color: #8FC1E3;
-  --text-color: #182628;
+  --text-color: #282628;
 }
 
 body {
@@ -11,8 +11,6 @@ body {
 
 .navbar-top {
   background-color: var(--main-color);
-  padding-top: 0px;
-  padding-bottom: 0px;
   justify-content: flex-start;
 }
 
@@ -21,6 +19,7 @@ body {
   border-radius: 0px;
   border-style: none;
   width: 20rem;
+  height: inherit;
 }
 
 .navbar-top .form-control:focus {
@@ -38,58 +37,22 @@ body {
   color: #000000;
 }
 
-.navbar-top .btn-login {
+.navbar-top .btn-menu {
   color: var(--text-color);
-  border-color: var(--text-color);
-  border-style: none;
-  border-radius: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.navbar-top .btn-login:hover {
-  color: var(--main-color);
-  background-color: var(--text-color);
-  border-radius: 0px;
-}
-
-.navbar-top .btn-login:focus, .btn-login:active {
-  color: var(--main-color);
-  background-color: var(--text-color);
-  border-color: var(--text-color);
-  box-shadow: none;
-  border-radius: 0px;
-}
-
-.btn-menu {
-  color: var(--text-color);
-}
-
-.btn-menu:hover {
+.navbar .btn-menu:hover, .navbar-top .btn-menu:focus, .navbar-top .btn-menu:active {
   color: #000000;
-}
-
-.sideNav {
-  width: inherit;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  text-decoration: none;
 }
 
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1500;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #FFFFFF;
@@ -101,14 +64,15 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 22px;
+  color: var(--text-color);
   display: block;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #000000;
 }
 
 .sidenav .closebtn {
@@ -117,6 +81,22 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.category-choose a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888994;
+}
+
+.category-choose a:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.category-choose .active {
+  color: var(--text-color);
 }
 
 .row-posts {

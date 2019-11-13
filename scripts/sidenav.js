@@ -6,7 +6,7 @@
 
   function closeNav() {
     document.getElementById("menuSideNav").style.width = "0";
+    document.getElementById("page").style.cssText = "position: absolute; left: 0; right: 0; transition: 0.5s;";
     document.getElementById("bg-dark").style.background = "rgba(255, 255, 255, 0)";
     setTimeout(() => document.getElementById("bg-dark").style.cssText = "", 500);
-    document.getElementById("page").style.cssText = "position: absolute; left: 0; right: 0; transition: 0.5s;";
   }

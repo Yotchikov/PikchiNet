@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Montserrat:500|Source+Sans+Pro&display=swap" rel="stylesheet">
   <script src="./scripts/animation.js" charset="utf-8"></script>
+  <script src="./scripts/sidenav.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
   <link rel="stylesheet" type="text/css" href="./styles/brands.css">
@@ -19,139 +20,137 @@
 
 <body>
   <!--Навигационная панель-->
-  <nav class="navbar sticky-top navbar-top row no-gutters">
-    <div class="brand-wrapper col-md-2">
+  <div id="page" style="left: 0; right: 0;">
+    <div id="bg-dark"></div>
+    <nav class="navbar sticky-top navbar-top">
+      <button type="button" class="btn btn-link btn-menu" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
       <a class="navbar-brand" href="#">_</a>
-    </div>
-    <form class="form-inline">
-      <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
-    </form>
-    <a class="btn btn-login ml-auto" href="#" role="button"><i class="fa fa-user"></i>&ensp;Войти</a>
-  </nav>
-
-  <!--Тело сайта-->
-  <div class="row no-gutters">
-
-    <!--Левый блок-->
-    <div class="col-md-2 left-bar">
-      <div class="menu">
-        <div class="list-group mb-auto">
-          <a href="#" class="list-group-item list-group-item-action border-0 active"><i class="fa fa-home" aria-hidden="true"></i>&ensp;&ensp;ГЛАВНАЯ</a>
-          <a href="#" class="list-group-item list-group-item-action border-0"><i class="fa fa-flask" aria-hidden="true"></i>&ensp;&ensp;ЛАБОРАТОРИЯ</a>
-          <a href="#" class="list-group-item list-group-item-action border-0"><i class="fa fa-cog" aria-hidden="true"></i>&ensp;&ensp;НАСТРОЙКИ</a>
-        </div>
+      <div class="ml-auto">
+        <form class="form-inline d-inline-flex">
+          <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+        </form>
+        <a class="btn btn-login ml-auto" href="#" role="button"><i class="fa fa-user"></i>&ensp;Войти</a>
       </div>
+    </nav>
+
+    <!--Тело сайта-->
+    <!--Левый блок-->
+    <div id="menuSideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Главная</a>
+      <a href="#">Лаборатория</a>
+      <a href="#">Настройки</a>
     </div>
 
     <!--Правый блок-->
-    <div class="col-md-10">
-      <div class="container">
-        <!--Пикчи дня-->
-        <div class="row">
-          <div class="col-md-10">
-            <hr class="divider">
-            <h4>ПИКЧИ ДНЯ</h4>
-            <div class="row row-posts">
-              <!--Левая колонка-->
-              <div class="col-md-6">
-                <div class="card post">
-                  <div class="row no-gutters">
-                    <div class="col-1 tool-panel">
-                      <div class="rate">
-                        <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-                        <br>127<br>
-                        <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      </div>
+    <div class="container">
+      <!--Пикчи дня-->
+      <div class="row">
+        <div class="col-md-10">
+          <hr class="divider">
+          <h4>ПИКЧИ ДНЯ</h4>
+          <div class="row row-posts">
+            <!--Левая колонка-->
+            <div class="col-md-6">
+              <div class="card post">
+                <div class="row no-gutters">
+                  <div class="col-1 tool-panel">
+                    <div class="rate">
+                      <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                      <br>127<br>
+                      <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                     </div>
-                    <div class="col-11">
-                      <div class="card-body">
-                        <ul class="card-top">
-                          <li><a href="" class="card-title"><span class="badge rbc">РБК</span></a></li>
-                          <li><a href="" class="card-hashtag">#ПРОИСШЕСТВИЯ</a></li>
-                        </ul>
-                        <p class="card-text">Сотрудника ядерного центра в Сарове оштрафовали на 450 тысяч рублей за попытку майнинга биткоинов на суперкомпьютере мощностью один петафлопс</p>
-                        <img src="img/mine.jpg" alt="...">
-                        <hr>
-                        <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
-                      </div>
+                  </div>
+                  <div class="col-11">
+                    <div class="card-body">
+                      <ul class="card-top">
+                        <li><a href="" class="card-title"><span class="badge rbc">РБК</span></a></li>
+                        <li><a href="" class="card-hashtag">#ПРОИСШЕСТВИЯ</a></li>
+                      </ul>
+                      <p class="card-text">Сотрудника ядерного центра в Сарове оштрафовали на 450 тысяч рублей за попытку майнинга биткоинов на суперкомпьютере мощностью один петафлопс</p>
+                      <img src="img/mine.jpg" alt="...">
+                      <hr>
+                      <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--Правая колонка-->
-              <div class="col-md-6">
-                <div class="card post">
-                  <div class="row no-gutters">
-                    <div class="col-1 tool-panel">
-                      <div class="rate">
-                        <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-                        <br>42<br>
-                        <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-                      </div>
+            </div>
+            <!--Правая колонка-->
+            <div class="col-md-6">
+              <div class="card post">
+                <div class="row no-gutters">
+                  <div class="col-1 tool-panel">
+                    <div class="rate">
+                      <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                      <br>42<br>
+                      <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                     </div>
-                    <div class="col-11">
-                      <div class="card-body">
-                        <ul class="card-top">
-                          <li><a href="" class="card-title"><span class="badge meduza">Meduza</span></a></li>
-                          <li><a href="" class="card-hashtag">#ПОЛИТИКА</a></li>
-                        </ul>
-                        <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
-                        <img src="./img/rus.jpg" alt="...">
-                        <hr>
-                        <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
-                      </div>
+                  </div>
+                  <div class="col-11">
+                    <div class="card-body">
+                      <ul class="card-top">
+                        <li><a href="" class="card-title"><span class="badge meduza">Meduza</span></a></li>
+                        <li><a href="" class="card-hashtag">#ПОЛИТИКА</a></li>
+                      </ul>
+                      <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
+                      <img src="./img/rus.jpg" alt="...">
+                      <hr>
+                      <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-2">
-            <hr class="divider">
-            <h4>ТОП</h4>
-            <div class="list-group top-list">
-              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i>&ensp;@Yotchikov</a>
-              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trophy" aria-hidden="true" style="color: silver"></i>&ensp;@MC_Zlodeykin</a>
-              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trophy" aria-hidden="true" style="color: #CD7F32"></i>&ensp;@Cookied</a>
-              <a href="#" class="list-group-item list-group-item-action">@Rudy</a>
-              <a href="#" class="list-group-item list-group-item-action">@Zibra72</a>
+        </div>
+        <!--Топ пикчеры-->
+        <div class="col-md-2">
+          <hr class="divider">
+          <h4>ТОП</h4>
+          <div class="list-group top-list">
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i>&ensp;@Yotchikov</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trophy" aria-hidden="true" style="color: silver"></i>&ensp;@MC_Zlodeykin</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trophy" aria-hidden="true" style="color: #CD7F32"></i>&ensp;@Cookied</a>
+            <a href="#" class="list-group-item list-group-item-action">@Rudy</a>
+            <a href="#" class="list-group-item list-group-item-action">@Zibra72</a>
+          </div>
+        </div>
+      </div>
+      <!--Новости без пикчи-->
+      <hr class="divider">
+      <h4>ЭТИМ НОВОСТЯМ НУЖНА ТВОЯ ПИКЧА</h4>
+      <div class="row row-posts">
+        <div class="col-11">
+          <div class="row row-posts">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
+                  <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
+                  <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
+                  <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!--Новости без пикчи-->
-        <h4>Этим новостям нужна твоя пикча:</h4>
-        <div class="row row-posts">
-          <div class="col-11">
-            <div class="row row-posts">
-              <div class="col-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
-                    <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
-                    <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title"><a href=""><span class="badge meduza">Meduza</span></a></h6>
-                    <p class="card-text">Власти Москвы всё-таки согласовали на 4 ноября проведение «Русского марша» в районе Люблино</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-viewall btn-lg"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-          </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-viewall btn-lg"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>

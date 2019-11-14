@@ -39,6 +39,7 @@ body {
 
 .btn-link {
   color: var(--text-color);
+  padding: 0;
 }
 
 .btn-link:hover, .btn-link:focus, .btn-link:active {

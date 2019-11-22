@@ -11,6 +11,7 @@ body {
 
 .navbar-top {
   background-color: var(--main-color);
+  height: 55.6px;
   justify-content: flex-start;
 }
 
@@ -210,5 +211,5 @@ h4 {
 
 .without-picture {
   position: sticky;
-  top: 0;
+  top: 71.6px;
 }

@@ -87,7 +87,7 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: -6px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
@@ -206,4 +206,9 @@ h4 {
 .top-list a:last-child {
   border-radius: 0px;
   border-bottom-width: 0px;
+}
+
+.without-picture {
+  position: sticky;
+  top: 0;
 }

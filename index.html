@@ -8,10 +8,11 @@
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Montserrat:500|Source+Sans+Pro&display=swap" rel="stylesheet">
   <script src="./scripts/animation.js" charset="utf-8"></script>
   <script src="./scripts/sidenav.js" charset="utf-8"></script>
+  <script src="./scripts/sticky.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
   <link rel="stylesheet" type="text/css" href="./styles/brands.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/bb8cf7377d.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -117,6 +118,12 @@
               <a href="#" class="list-group-item list-group-item-action">@Rudy</a>
               <a href="#" class="list-group-item list-group-item-action">@Zibra72</a>
             </div>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><a href="" class="vk"><i class="fa fa-vk" aria-hidden="true"></i>&ensp;ВКонтакте</a></li>
+              <li><a href="" class="inst"><i class="fa fa-instagram" aria-hidden="true"></i>&ensp;Instagram</a></li>
+              <li><a href="" class="tg"><i class="fa fa-telegram" aria-hidden="true"></i>&ensp;Телеграм</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -124,14 +131,16 @@
       <div class="row">
         <!--Без пикчи-->
         <div class="col-md-3">
-          <hr class="divider">
-          <h4>БЕЗ ПИКЧИ</h4>
-          <div class="list-group top-list">
-            <a href="#" class="list-group-item list-group-item-action">Путин рассказал об избежавшей рецессии российской экономике</a>
-            <a href="#" class="list-group-item list-group-item-action">В Киеве пригрозили отреагировать на запуск поездов по Крымскому мосту</a>
-            <a href="#" class="list-group-item list-group-item-action">Трамп не стал смотреть слушания по делу об импичменте</a>
-            <a href="#" class="list-group-item list-group-item-action">Туск назвал Россию «стратегической проблемой» Европы</a>
-            <a href="#" class="list-group-item list-group-item-action">Лавров в шутку ответил на вопрос о «подготовке» России к выборам в США</a>
+          <div class="without-picture">
+            <hr class="divider">
+            <h4>БЕЗ ПИКЧИ</h4>
+            <div class="list-group top-list">
+              <a href="#" class="list-group-item list-group-item-action">Путин рассказал об избежавшей рецессии российской экономике</a>
+              <a href="#" class="list-group-item list-group-item-action">В Киеве пригрозили отреагировать на запуск поездов по Крымскому мосту</a>
+              <a href="#" class="list-group-item list-group-item-action">Трамп не стал смотреть слушания по делу об импичменте</a>
+              <a href="#" class="list-group-item list-group-item-action">Туск назвал Россию «стратегической проблемой» Европы</a>
+              <a href="#" class="list-group-item list-group-item-action">Лавров в шутку ответил на вопрос о «подготовке» России к выборам в США</a>
+            </div>
           </div>
         </div>
         <div class="col-md-7">
@@ -141,6 +150,25 @@
             <div>
               <button type="button" class="btn btn-link slide-arrow mr-1"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
               <button type="button" class="btn btn-link slide-arrow ml-1"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="card post d-flex flex-row">
+            <div class="tool-panel">
+              <div class="rate">
+                <button type="button" class="btn btn-link btn-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                <br>127<br>
+                <button type="button" class="btn btn-link btn-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="card-top">
+                <li><a href="" class="card-title"><span class="badge vedomosti">Ведомости</span></a></li>
+                <li><a href="" class="card-hashtag">#ПОЛИТИКА</a></li>
+              </ul>
+              <p class="card-text">Минпромторг предлагает установить квоты на госзакупки отечественного</p>
+              <img src="img/importo.jpg" alt="...">
+              <hr>
+              <p class="card-text"><small class="text-muted">Пикчер: @Yotchikov</small></p>
             </div>
           </div>
           <div class="card post d-flex flex-row">

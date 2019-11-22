@@ -1,3 +1,30 @@
+a.vk {
+  color: #4680C2;
+}
+
+a.vk:hover {
+  color: #34608E;
+  text-decoration: none;
+}
+
+a.tg {
+  color: #0088cc;
+}
+
+a.tg:hover {
+  color: #006599;
+  text-decoration: none;
+}
+
+a.inst {
+  color: #E1306C;
+}
+
+a.inst:hover {
+  color: #AD2655;
+  text-decoration: none;
+}
+
 .badge {
   padding: 3px;
   border-radius: 0px;

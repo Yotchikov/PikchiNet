@@ -3,7 +3,7 @@
   --text-color: #282628;
 }
 
-body {
+html, body {
   background-color: #F2F8FF;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
@@ -35,7 +35,8 @@ body {
 }
 
 .navbar-brand:hover {
-  color: #000000;
+  color: #F2F8FF;
+	text-shadow: -3px 3px 0px var(--text-color);
 }
 
 .btn-link {
@@ -94,7 +95,7 @@ body {
   margin-left: 50px;
 }
 
-.category-choose a, .slide-arrow {
+.category-choose a, .feed-settings {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -148,7 +149,7 @@ body {
   margin-right: 5px;
 }
 
-a.card-hashtag {
+.card-hashtag {
   font-weight: 600;
   font-size: 75%;
   color: #4A4A4A;
@@ -209,7 +210,7 @@ h4 {
   border-bottom-width: 0px;
 }
 
-.without-picture {
+.sticky-header {
   position: sticky;
   top: 71.6px;
 }

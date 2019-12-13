@@ -26,7 +26,6 @@ a.inst:hover {
 }
 
 .badge {
-  padding: 3px;
   border-radius: 0px;
 }
 
@@ -53,4 +52,9 @@ a.inst:hover {
 .vedomosti {
   background-color: #FBF1EC;
   color: #000000;
+}
+
+.mediazona {
+  background-color: #000000;
+  color: #FFFFFF;
 }
